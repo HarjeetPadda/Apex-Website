@@ -92,19 +92,22 @@ nav ul button:hover{
 /* Section 2 */
 .about-section2{
     background: #47B5FF;
-    height: 565px;
+    height: 380px;
+    line-height: 1;
     text-align: center;
     color: #fff;
     margin: 0;
     padding: 50px 200px;
 }
 .about-section2 h3{
-    font-family: 'Anton',sans-serif;
-    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: calc((1.8 - 1) * 1.2vw + 1rem);
+    font-weight: 900;
 }
 .about-section2 p{
-    font-family: 'Anton',sans-serif;
-    font-size: 3.9rem;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: calc((2.5 - 1) * 1.2vw + 1rem);
+    font-weight: 900;
 }
 
 /* Section 3 */
@@ -133,6 +136,14 @@ nav ul button:hover{
     width: 60%;
     word-wrap: break-word;
 }
+.about-section3-2 h3{
+    font-size: calc((2.1 - 1) * 1.2vw + 1rem);
+    font-weight: bold;
+    padding: 15px 0;
+}
+.about-section3-2 p{
+    font-size: calc((1 - 1) * 1.2vw + 1rem);
+}
 div.about-section3-2{
     text-align: left;
     padding: 50px 50px 50px 0;
@@ -160,7 +171,7 @@ div.about-section3-2{
 .about-section4 p{
     font-weight: 900;
     font-size: calc((1.9 - 1) * 1.1vw + .8rem);
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
@@ -299,12 +310,8 @@ address{
         font-size: 6rem;
         line-height: 1;
     }
-    div.about-section2 p{
-        font-size: 2.5rem;
-    }
     .about-section2{
-        padding: 50px 100px;
-        line-height: normal;
+        height: auto;
     }
     .about-section4{
         padding: 50px;
@@ -335,7 +342,6 @@ address{
     }
     .about-section2{
         padding: 50px 50px;
-        line-height: 1.2;
     }
     .about-section3{
         flex-direction: column;
