@@ -64,7 +64,7 @@ nav ul button:hover{
 }
 
 
-/* Section 1 */
+/* About-Section 1 */
 .about-section1{
     position: relative;
     background: #1363DF;
@@ -89,7 +89,7 @@ nav ul button:hover{
 }
 
 
-/* Section 2 */
+/* About -Section 2 */
 .about-section2{
     background: #47B5FF;
     height: 380px;
@@ -110,7 +110,7 @@ nav ul button:hover{
     font-weight: 900;
 }
 
-/* Section 3 */
+/* About - Section 3 */
 .about-section3 {
     background: #06283D;
     height: 900px;
@@ -153,7 +153,7 @@ div.about-section3-2{
     font-weight: bold;
 }
 
-/* Section 4 */
+/* About-Section 4 */
 .about-section4{
     background: #47B5FF;
     height: 600px;
@@ -219,6 +219,100 @@ address{
         height: auto;
     }
 }
+/* CONTACT PAGE STYLES */
+hr {
+    height: 5px;
+    background-color: #fff;
+}
+#contact-section{
+    background-color:#47B5FF;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+#contact-section h3{
+    color: #06283D;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+    white-space: nowrap;
+}
+#contact-section p{
+    font-size: 2rem;
+}
+#contact-section div{
+    margin-bottom: 100px;
+}
+div#contact-section1{
+    width: 40%;
+    color: #fff;
+    padding:50px 0 50px 100px;
+}
+div#contact-section1 h4{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+div#contact-section2{
+    width: 40%;
+}
+
+form{
+    margin: 60px 100px 0 0
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+form textarea{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 1.5rem;
+}
+form button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+}
+
+form button:hover{
+    color: #fff;
+    background-color: black;
+}
+#thankYouMessage{
+    width: 100vw;
+    height: 68vh;
+    background-color: #47B5FF;
+    color: #fff;
+    text-align: center;
+    padding: 10%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#thankYouMessage h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+#thankYouMessage p{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 /* @Media 1300px*/
 @media (max-width: 1300px) {
     nav ul li a{
@@ -239,6 +333,7 @@ address{
     }
     div.about-section2 p{
         font-size: 3rem;
+        white-space: nowrap;
     }
     .about-section4{
         padding: 50px 125px;
@@ -296,6 +391,29 @@ address{
     .about-section4{
         padding: 50px 100px;
     }
+    #contact-section{
+        flex-direction: column;
+    }
+    div #contact-section1{
+        width: 100%;
+        padding: 10px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    #contact-section1 h4{
+        font-size: 1rem;
+        white-space: normal;
+    }
+    #contact-section1 p{
+        font-size: 1.5rem;
+    }
+    div #contact-section2 {
+        width: 100%;
+        padding: 50px;
+    }
+    form{
+        margin: 0;
+    }
     .footer{
         height: auto;
     }
@@ -315,6 +433,9 @@ address{
     }
     .about-section4{
         padding: 50px;
+    }
+    #thankYouMessage{
+        height: auto;
     }
     .footer{
         flex-direction: column;
