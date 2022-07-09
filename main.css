@@ -17,11 +17,11 @@ nav {
     background: #fff;
 }
 label.logo {
-    padding: 35px 0 0px 100px;  
+    padding: 35px 0 0px 200px;  
 }
 nav ul {
     float: right;
-    margin: 35px 100px 0 0;
+    margin: 35px 200px 0 0;
     padding-left: 0;
 }
 
@@ -29,10 +29,12 @@ nav ul li{
     display: inline-block;
     margin: 25px 10px;
 }
+#portalLogin{
+    background: #fff;
+}
 nav ul button{
     border-radius: 5px;
-    padding: 7px 10px;
-    background: #fff;
+    padding: 5px 7px;
 }
 nav ul li a{
     color: black;
@@ -47,9 +49,10 @@ a.active, a:hover{
     color: #fff;
     transition: .5s;
 }
-nav ul button:hover{
-    color: #fff;
+#portalLogin button:hover{
     background: black;
+    color: #fff;
+    transition: .5s
 }
 .checkbtn {
     font-size: 30px;
@@ -62,12 +65,150 @@ nav ul button:hover{
 #check{
     display: none;
 }
-
-
+/*Home.html styles*/
+/*home-section1*/
+video {
+    object-fit: cover;
+    min-width: 100%;
+    height: calc(100vh - 145px);
+    opacity: 0.5;
+}
+.home-section1 {
+    position: relative;
+    background: #3AB0FF;
+    height: calc(100vh - 145px);
+}
+.home-sec1H1{
+    position: absolute;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: calc((3.5 * 1) * 1.2vw + 1rem);
+    font-weight: 900;
+    top: 58vh;
+    left: 200px;
+}
+.home-sec1H2{
+    position: absolute;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: calc((3.5 * 1) * 1.2vw + 1rem);
+    font-weight: 900;
+    top: 68vh;
+    left: 200px;
+}
+.home-section2{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: #3AB0FF;
+}
+.home-section2-1{
+    position: absolute;
+    background: #fff;
+    width: 40%;
+    margin: 150px 0 0 200px;
+    padding: 50px;
+    z-index:1;
+}
+.home-section2-1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+}
+.home-section2-1 p{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 25px;
+}
+.home-section2-2 img{
+    opacity: .5;
+    height: 560px;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.home-section3{
+    background: #06283D;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+.home-section3-1{
+    width: 40%;
+    padding: 50px 0 50px 0;
+    margin-left: 200px;
+}
+.home-section3-1 h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: calc((2.5 - 1) * 1.2vw + 1rem);
+    text-align: left;
+    line-height: 1;
+    color: #47B5FF;
+}
+.home-section3-2{
+    width: 60%;
+    word-wrap: break-word;
+}
+.home-section3-2 p{
+    font-size: calc((1.1 - 1) * 1.2vw + 1rem);
+}
+.home-section3-2 strong{
+    font-weight: 900;
+}
+.home-section3-2 button{
+    background: #06283D;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-top: 25px;
+}
+.home-section3-2 button:hover{
+    background: #fff;
+    color: black;
+    transition: .5s
+}
+div.home-section3-2{
+    text-align: left;
+    padding: 50px 50px 50px 0;
+    line-height: 1.7;
+}
+.home-section4{
+    background: #27496D;
+}
+.home-section5{
+    background: #fff;
+    text-align: center;
+    margin: auto 200px auto 200px
+}
+.home-section5 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: calc((2 * 1)* 1.2vw + 1rem);
+    color: #47B5FF;
+    margin-top: 25px;
+}
+.home-section5 p{
+    margin-top: 25px
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background:#06283D;
+}
+.grid-item{
+    width: 314px;
+    height: 400px;
+    background:#1363DF;
+}
 /* About-Section 1 */
 .about-section1{
     position: relative;
-    background: #1363DF;
+    background: #47B5FF;
 }
 #about-imgSec1{
     opacity: .4;
@@ -87,8 +228,6 @@ nav ul button:hover{
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
-
-
 /* About -Section 2 */
 .about-section2{
     background: #47B5FF;
@@ -155,9 +294,9 @@ div.about-section3-2{
 
 /* About-Section 4 */
 .about-section4{
-    background: #47B5FF;
+    background: #1363DF;
     height: 600px;
-    font-family: '', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     color: #fff;
     margin: 0;
@@ -199,26 +338,6 @@ address{
     margin-left: 25px;
 }
 
-/* @Media 1600px*/
-@media(max-width: 1600px) {
-    div.about-section2 p{
-        font-size: 3.5rem;
-    }
-    .about-section2{
-        padding: 50px 150px;
-    }
-    .about-section3{
-        height: auto;
-    }
-    .about-section4{
-        height: auto;
-        padding: 50px 150px;
-    }
-    .footer{
-        padding: 30px 250px;
-        height: auto;
-    }
-}
 /* CONTACT PAGE STYLES */
 hr {
     height: 5px;
@@ -296,12 +415,12 @@ form button:hover{
     background-color: black;
 }
 #thankYouMessage{
-    width: 100vw;
+    width: 100%;
     height: 68vh;
+    padding: 150px 0px;
     background-color: #47B5FF;
     color: #fff;
     text-align: center;
-    padding: 10%;
     font-family: 'Source Sans Pro', sans-serif;
 }
 #thankYouMessage h1{
@@ -311,6 +430,35 @@ form button:hover{
 #thankYouMessage p{
     font-size: 3rem;
     font-weight: 600;
+}
+#thankYouName h1{
+    margin: 0;
+    width: 100vw;
+}
+
+/* @Media 1600px*/
+@media(max-width: 1600px) {
+    div.about-section2 p{
+        font-size: 3.5rem;
+    }
+    .about-section2{
+        padding: 50px 150px;
+    }
+    .about-section3{
+        height: auto;
+    }
+    .about-section4{
+        height: auto;
+        padding: 50px 150px;
+    }
+    .footer{
+        padding: 30px 250px;
+        height: auto;
+    }
+    #thankYouMessage{
+        height: auto;
+        width: auto;
+    }
 }
 
 /* @Media 1300px*/
