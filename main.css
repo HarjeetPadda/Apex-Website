@@ -174,11 +174,15 @@ video {
 }
 div.home-section3-2{
     text-align: left;
-    padding: 50px 50px 50px 0;
+    padding: 50px 0 50px 0;
     line-height: 1.7;
+    margin-right: 200px;
+    margin-left: 100px;
 }
 .home-section4{
     background: #27496D;
+    padding: 100px 200px;
+    color: #47B5FF;
 }
 .home-section5{
     background: #fff;
@@ -195,16 +199,19 @@ div.home-section3-2{
 .home-section5 p{
     margin-top: 25px
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+.home-section6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background:#06283D;
 }
-.grid-item{
-    width: 314px;
+.home-section6 img{
     height: 400px;
-    background:#1363DF;
+    width: 317px;
+    opacity: .5;
 }
+
+
 /* About-Section 1 */
 .about-section1{
     position: relative;
@@ -338,10 +345,38 @@ address{
     margin-left: 25px;
 }
 
+/*QUOTE PAGE STYLES*/
+.quote-section1{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Source Code Pro',sans-serif;
+    width: 100%;
+    height: calc(100vh -145px);
+    background: #3AB0FF;
+    padding: 100px;
+}
+.quote-section1-1{
+    width: 40%;
+    color: #fff;
+}
+.quote-section1-1 h1{
+    font-size: calc((1.5 * 1)* 1.2vw + 1rem);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.quote-section1-1 p{
+    font-size: calc((.3 * 1)* 1.2vw + 1rem);
+}
+div.quote-section1-2{
+    width: 40%;
+}
 /* CONTACT PAGE STYLES */
 hr {
     height: 5px;
     background-color: #fff;
+}
+.quote-section1-2 form{
+    margin: 0;
 }
 #contact-section{
     background-color:#47B5FF;
@@ -582,6 +617,19 @@ form button:hover{
     .about-section4{
         padding: 50px;
     }
+    .quote-section1{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 100px;
+    }
+    .quote-section1-1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    div.quote-section1-2{
+        width: 100%;
+    }
     #thankYouMessage{
         height: auto;
     }
@@ -626,6 +674,9 @@ form button:hover{
     }
     div.about-section3-2{
         padding: 0 50px 50px 50px;
+    }
+    .quote-section1{
+        padding: 50px 50px 50px;
     }
     address{
         padding: 25px 225px 25px 25px;
