@@ -69,7 +69,7 @@ a.active, a:hover{
 /*home-section1*/
 video {
     object-fit: cover;
-    min-width: 100%;
+    width: 100%;
     height: calc(100vh - 145px);
     opacity: 0.5;
 }
@@ -82,23 +82,23 @@ video {
     position: absolute;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc((3.5 * 1) * 1.2vw + 1rem);
+    font-size: calc((5 * 1) * 1.2vw + 1rem);
     font-weight: 900;
-    top: 58vh;
+    top: 48vh;
     left: 200px;
 }
 .home-sec1H2{
     position: absolute;
     color: #fff;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: calc((3.5 * 1) * 1.2vw + 1rem);
+    font-size: calc((5 * 1) * 1.2vw + 1rem);
     font-weight: 900;
-    top: 68vh;
+    top: 60vh;
     left: 200px;
 }
 .home-section2{
     position: relative;
-    height: 700px;
+    height: auto;
     width: 100%;
     background: #3AB0FF;
 }
@@ -108,10 +108,11 @@ video {
     width: 40%;
     margin: 150px 0 0 200px;
     padding: 50px;
-    z-index:1;
+    z-index: 1;
 }
 .home-section2-1 h1{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: calc((1.5 * 1) * 1.2vw + 1rem);
     font-weight: 900;
     line-height: 1;
 }
@@ -119,13 +120,14 @@ video {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 25px;
 }
+
 .home-section2-2 img{
     opacity: .5;
     height: 560px;
     width: 50%;
     margin-left: 40%;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 200px;
 }
 .home-section3{
     background: #06283D;
@@ -172,7 +174,7 @@ video {
     color: black;
     transition: .5s
 }
-div.home-section3-2{
+.home-section3-2{
     text-align: left;
     padding: 50px 0 50px 0;
     line-height: 1.7;
@@ -329,7 +331,7 @@ div.about-section3-2{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 300px;
+    padding: 10px 200px;
 }
 address{
     line-height: .5;
@@ -473,6 +475,27 @@ form button:hover{
 
 /* @Media 1600px*/
 @media(max-width: 1600px) {
+    .home-sec1H1{
+        left: 150px;
+        top: 52vh;
+    }
+    .home-sec1H2{
+        left: 150px;
+        top: 62vh;
+    }
+    .home-section2-1{
+        margin-left: 150px;
+    }
+    .home-section3-1{
+        margin-left: 150px;
+    }
+    .home-section3-2{
+        margin-right: 150px;
+    }
+    .home-section5{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     div.about-section2 p{
         font-size: 3.5rem;
     }
@@ -507,6 +530,24 @@ form button:hover{
     nav ul{
         margin-right: 75px;
     }
+    .home-sec1H1{
+        left: 100px;
+        top: 54vh;
+    }
+    .home-sec1H2{
+        left: 100px;
+        top: 64vh;
+    }
+    .home-section2-1{
+        margin-left: 100px;
+    }
+    .home-section3-1{
+        margin-left: 100px;
+    }
+    .home-section3-2{
+        margin-right: 100px;
+        margin-left: 50px;
+    }
     .about-section1 .sec1H1{
         font-size: 6rem;
     }
@@ -516,7 +557,6 @@ form button:hover{
     }
     div.about-section2 p{
         font-size: 3rem;
-        white-space: nowrap;
     }
     .about-section4{
         padding: 50px 125px;
@@ -558,6 +598,9 @@ form button:hover{
         padding: 7px 13px;
         border-radius: 10px;
     }
+    #portalLogin{
+        background: #06283D;
+    }
     a:hover,a.active{
         background: none;
         color: #3A7EFC;
@@ -565,14 +608,33 @@ form button:hover{
     #check:checked ~ ul{
         left: 0;
     }
-    div.about-section2 p{
-        font-size: 2.5rem;
+    .home-sec1H1{
+        left: 75px;
+        top: 56vh;
     }
-    .section2{
-        line-height: 2;
+    .home-sec1H2{
+        left: 75px;
+        top: 66vh;
     }
+    .home-section2-1{
+        margin-left: 75px;
+    }
+    .home-section3-1{
+        margin-left: 75px;
+    }
+    .home-section3-2{
+        margin-right: 75px;
+    }
+    .home-section5{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .about-section2{
+        padding: 50px;
+    }
+    
     .about-section4{
-        padding: 50px 100px;
+        padding: 50px;
     }
     #contact-section{
         flex-direction: column;
@@ -606,6 +668,29 @@ form button:hover{
 }
 /* @Media 900px*/
 @media(max-width: 900px) {
+    .home-sec1H1{
+        left: 50px;
+        top: 58vh;
+    }
+    .home-sec1H2{
+        left: 50px;
+        top: 68vh;
+    }
+    .home-section2-1{
+        margin: 150px 0 0 50px;
+        width: 60%;
+        padding: 15px;
+    }
+    .home-section2-2 img{
+        height: 350px;
+        margin-bottom: 100px;
+    }
+    .home-section3-1{
+        margin-left: 50px;
+    }
+    .home-section3-2{
+        margin-right: 50px;
+    }
     .about-section1 .sec1H1{
         white-space: normal;
         font-size: 6rem;
@@ -615,7 +700,7 @@ form button:hover{
         height: auto;
     }
     .about-section4{
-        padding: 50px;
+        padding: 25px;
     }
     .quote-section1{
         flex-direction: column;
@@ -651,6 +736,14 @@ form button:hover{
     }
     .checkbtn{
         margin: 10px 40px;
+    }
+    .home-section2-2 img{
+        height: 250px;
+        margin-top: 40px;
+        margin-bottom: 250px;
+    }
+    .home-section3-2{
+        margin-left: 25px;
     }
     .about-section1 .about-sec1H1{
         white-space: normal;
