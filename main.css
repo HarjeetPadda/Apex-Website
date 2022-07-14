@@ -181,10 +181,25 @@ video {
     margin-right: 200px;
     margin-left: 100px;
 }
-.home-section4{
+.home-section4,.home-section4a{
     background: #27496D;
+    width: 100%;
     padding: 100px 200px;
     color: #47B5FF;
+    display: flex;
+}
+.home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+    height: 400px;
+}
+.home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+    text-align: center;
+    white-space: wrap;
+    border: #fff solid 2px;
+}
+@media(max-width: 900px){
+    .home-section4,.home-section4a{
+        flex-wrap: wrap;
+    }
 }
 .home-section5{
     background: #fff;
