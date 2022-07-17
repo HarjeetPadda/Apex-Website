@@ -181,26 +181,53 @@ video {
     margin-right: 200px;
     margin-left: 100px;
 }
-.home-section4,.home-section4a{
+.home-section4{
     background: #27496D;
-    width: 100%;
-    padding: 100px 200px;
+    width: auto;
+    padding: 25px;
     color: #47B5FF;
     display: flex;
+    flex-wrap: wrap;
 }
+.home-section4-h1{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: calc((3.5 - 1) * 1.2vw + 1rem);
+    font-weight: 900;
+    color: #fff;
+    background: #27496D;
+    flex-basis: 8;
+    margin: 0;
+    padding: 25px 0 0 40%;
+}
+
+
 .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
-    height: 400px;
+    height: 500px;
+    margin-bottom: 15px;
+}
+.home-section4-2 img,.home-section4-5 img{
+    width: 525px;
 }
 .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
     text-align: center;
-    white-space: wrap;
+    align-content: center;
+    color: #fff;
+    width: 600px;
     border: #fff solid 2px;
+    padding: 25px;
 }
-@media(max-width: 900px){
-    .home-section4,.home-section4a{
-        flex-wrap: wrap;
-    }
+.home-section4 h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: calc((2 - 1)* 1.2vw + 1rem);
 }
+.home-section4 p{
+    font-size: calc((.9 - 1rem)* 1.2vw + 1rem);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    padding: 0 25px;
+}
+
 .home-section5{
     background: #fff;
     text-align: center;
@@ -227,8 +254,6 @@ video {
     width: 317px;
     opacity: .5;
 }
-
-
 /* About-Section 1 */
 .about-section1{
     position: relative;
@@ -487,7 +512,34 @@ form button:hover{
     margin: 0;
     width: 100vw;
 }
-
+/* @media 1900px */
+@media (max-width:1900px) {
+    .home-section4{
+        padding-left: 110px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 500px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 545px;
+    }
+}
+/* @media 1800px */
+@media (max-width:1800px) {
+    
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 450px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 500px;
+    }
+}
+/* @media 1700px */
+@media (max-width:1700px) {
+    .home-section4{
+        padding-left: 50px;
+    }
+}
 /* @Media 1600px*/
 @media(max-width: 1600px) {
     .home-sec1H1{
@@ -506,6 +558,15 @@ form button:hover{
     }
     .home-section3-2{
         margin-right: 150px;
+    }
+    .home-section4{
+        padding: 25px 0 25px 180px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 350px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 400px;
     }
     .home-section5{
         margin-left: 100px;
@@ -533,7 +594,16 @@ form button:hover{
         width: auto;
     }
 }
-
+@media(max-width:1500px) {
+    .home-section4{
+        padding-left: 150px;
+    }
+}
+@media(max-width:1450px) {
+    .home-section4{
+        padding-left: 75px;
+    }
+}
 /* @Media 1300px*/
 @media (max-width: 1300px) {
     nav ul li a{
@@ -563,6 +633,15 @@ form button:hover{
         margin-right: 100px;
         margin-left: 50px;
     }
+    .home-section4{
+        padding-left: 150px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 450px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 500px;
+    }
     .about-section1 .sec1H1{
         font-size: 6rem;
     }
@@ -578,6 +657,11 @@ form button:hover{
     }
     .footer{
         padding: 30px 100px;
+    }
+}
+@media (max-width:1200px) {
+    .home-section4{
+        padding-left: 80px;
     }
 }
 /* @Media 1100px*/
@@ -640,6 +724,15 @@ form button:hover{
     .home-section3-2{
         margin-right: 75px;
     }
+    .home-section4{
+        padding-left: 150px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 350px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 400px;
+    }
     .home-section5{
         margin-left: 50px;
         margin-right: 50px;
@@ -681,6 +774,11 @@ form button:hover{
         margin-right: 15px;
     }
 }
+@media (max-width:1000px) {
+    .home-section4{
+        padding-left: 80px;
+    }
+}
 /* @Media 900px*/
 @media(max-width: 900px) {
     .home-sec1H1{
@@ -706,6 +804,16 @@ form button:hover{
     .home-section3-2{
         margin-right: 50px;
     }
+    .home-section4{
+        padding-left: 75px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 650px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 700px;
+    }
+
     .about-section1 .sec1H1{
         white-space: normal;
         font-size: 6rem;
@@ -744,6 +852,14 @@ form button:hover{
         padding: 40px 25px 25px 400px; 
     }
 }
+@media (max-width:800px) {
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 550px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 600px;
+    }
+}
 /* @Media 700px*/
 @media (max-width: 700px) {
     label.logo {
@@ -759,6 +875,15 @@ form button:hover{
     }
     .home-section3-2{
         margin-left: 25px;
+    }
+    .home-section4{
+        padding-left: 75px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 500px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 550px;
     }
     .about-section1 .about-sec1H1{
         white-space: normal;
@@ -793,9 +918,50 @@ form button:hover{
         padding: 40px 25px 25px 225px; 
     }
 }
-
+@media (max-width:650px){
+    .home-section4{
+        padding-left: 60px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 450px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 500px;
+    }
+}
+@media (max-width:600px){
+    .home-section4{
+        padding-left: 75px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 350px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 400px;
+    }
+}
+@media (max-width:500px){
+    .home-section4{
+        padding: 50px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 340px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 380px;
+    }
+}
 /* @Media 410px*/
 @media (max-width:410px) {
+    .home-section4{
+        padding-left: 20px;
+    }
+    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
+        width: 300px;
+    }
+    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
+        width: 350px;
+    }
     .about-section1 .about-sec1H1{
         font-size: 4rem;
     }
