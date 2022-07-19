@@ -213,8 +213,9 @@ video {
     align-content: center;
     color: #fff;
     width: 600px;
-    border: #fff solid 2px;
+    /* border: #fff solid 2px; */
     padding: 25px;
+    transition: .5s;
 }
 .home-section4 h3{
     font-family: 'Source Sans Pro', sans-serif;
@@ -227,7 +228,12 @@ video {
     font-weight: 500;
     padding: 0 25px;
 }
-
+.home-section4-1:hover,.home-section4-2:hover,.home-section4-3:hover,.home-section4-4:hover,.home-section4-5:hover,.home-section4-6:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 4px 4px #47B5FF;
+    background: #06283D;
+    z-index: 2;
+} 
 .home-section5{
     background: #fff;
     text-align: center;
@@ -343,7 +349,7 @@ div.about-section3-2{
 
 /* About-Section 4 */
 .about-section4{
-    background: #1363DF;
+    background: #47B5FF;
     height: 600px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
