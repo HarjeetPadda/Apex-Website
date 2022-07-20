@@ -368,31 +368,31 @@ div.about-section3-2{
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
-/* footer style */
-.footer{
-    background: #06283D;
-    height: 150px;
-    color: #fff;
+/* Services.html styles */
+.services-section {
+    
+    width: 100%;
+    background: #47B5FF;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 200px;
 }
-address{
-    line-height: .5;
-    font-size: calc(1.1 * .9rem);
-    margin-right: 25px;
-    white-space: nowrap;
+.services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
+    width: 80%;
+    background: #fff;
+    margin: 100px;
+    display: flex;
+    padding: 50px;
 }
-.footer div{
-    text-align: right;
-    line-height: .5;
-    font-size: calc(1.1 * .9rem);
-    white-space: nowrap;
-    margin-left: 25px;
+.services-section1-1,.services-section2-1,.services-section3-1,.services-section4-1,.services-section5-1,.services-section6-1{
+
 }
 
+.services-section1-2,.services-section2-2,.services-section3-2,.services-section4-2,.services-section5-2,.services-section6-2{
+    padding: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 /*QUOTE PAGE STYLES*/
 .quote-section1{
     display: flex;
@@ -518,6 +518,30 @@ form button:hover{
     margin: 0;
     width: 100vw;
 }
+/* footer style */
+.footer{
+    background: #06283D;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+address{
+    line-height: .5;
+    font-size: calc(1.1 * .9rem);
+    margin-right: 25px;
+    white-space: nowrap;
+}
+.footer div{
+    text-align: right;
+    line-height: .5;
+    font-size: calc(1.1 * .9rem);
+    white-space: nowrap;
+    margin-left: 25px;
+}
+
 /* @media 1900px */
 @media (max-width:1900px) {
     .home-section4{
