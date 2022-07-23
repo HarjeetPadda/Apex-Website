@@ -195,9 +195,9 @@ video {
     font-weight: 900;
     color: #fff;
     background: #27496D;
-    flex-basis: 8;
     margin: 0;
-    padding: 25px 0 0 40%;
+    padding: 15px 0 0 0;
+    text-align:center;
 }
 
 
@@ -380,7 +380,7 @@ div.about-section3-2{
     align-items: center;
 }
 .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
-    width: 80%;
+    width: 90%;
     background:#27496D;
     color: #fff;
     line-height: 1.8;
@@ -399,8 +399,17 @@ div.about-section3-2{
 
 
 .services-section1-2,.services-section2-2,.services-section3-2,.services-section4-2,.services-section5-2,.services-section6-2{
-    padding: 50px;
+    padding: 0 50px 50px;
     font-family: 'Source Sans Pro', sans-serif;
+}
+.services-section1-2 h3,.services-section2-2 h3,.services-section3-2 h3,.services-section4-2 h3,.services-section5-2 h3,.services-section6-2 h3{
+    font-size: calc((2.4 - 1) * 1.2vw + 1rem);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.services-section1-2 p,.services-section2-2 p,.services-section3-2 p,.services-section4-2 p,.services-section5-2 p,.services-section6-2 p{
+    font-size: calc((1.1 - 1) * 1.2vw + 1rem);
+    margin: 0;
 }
 /*QUOTE PAGE STYLES*/
 .quote-section1{
@@ -624,9 +633,6 @@ address{
         height: auto;
         padding: 50px 150px;
     }
-    .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
-        width: 90%;
-    }
     .footer{
         padding: 30px 250px;
         height: auto;
@@ -697,6 +703,16 @@ address{
     .about-section4{
         padding: 50px 125px;
     }
+    .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
+        flex-direction: column;
+        text-align: center;
+        margin: 25px;
+    }
+    .services-section1-1 img,.services-section2-1 img,.services-section3-1 img,.services-section4-1 img,.services-section5-1 img,.services-section6-1 img{
+        width: 700px;
+        margin-bottom: 25px;
+    }
+    
     .footer{
         padding: 30px 100px;
     }
@@ -704,10 +720,6 @@ address{
 @media screen and (max-width:1200px) {
     .home-section4{
         padding-left: 80px;
-    }
-    .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
-        width: 100%;
-        margin: auto 25px;
     }
 }
 /* @Media 1100px*/
@@ -824,12 +836,6 @@ address{
     .home-section4{
         padding-left: 80px;
     }
-    .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
-        padding: 25px;
-        flex-direction: column;
-        text-align: center;
-        margin: 30px auto;
-    }
 }
 /* @Media 900px*/
 @media screen and (max-width: 900px) {
@@ -876,6 +882,15 @@ address{
     }
     .about-section4{
         padding: 25px;
+    }
+    .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
+        padding: 25px;
+    }
+    .services-section1-1 img,.services-section2-1 img,.services-section3-1 img,.services-section4-1 img,.services-section5-1 img,.services-section6-1 img{
+        width: 500px;
+    }
+    .services-section1-2,.services-section2-2,.services-section3-2,.services-section4-2,.services-section5-2,.services-section6-2{
+        padding: 0 25px 25px;
     }
     .quote-section1{
         flex-direction: column;
@@ -960,6 +975,12 @@ address{
     div.about-section3-2{
         padding: 0 50px 50px 50px;
     }
+    .services-section1-1 img,.services-section2-1 img,.services-section3-1 img,.services-section4-1 img,.services-section5-1 img,.services-section6-1 img{
+        width: 350px;
+    }
+    .services-section1-2,.services-section2-2,.services-section3-2,.services-section4-2,.services-section5-2,.services-section6-2{
+        padding: 0 10px 10px;
+    }
     .quote-section1{
         padding: 50px 50px 50px;
     }
@@ -1020,6 +1041,9 @@ address{
     .about-section2{
         line-height: 1;
         padding: 25px;
+    }
+    .services-section1-1 img,.services-section2-1 img,.services-section3-1 img,.services-section4-1 img,.services-section5-1 img,.services-section6-1 img{
+        width: 250px;
     }
     address{
         padding: 25px 100px 25px 15px;
