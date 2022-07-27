@@ -275,7 +275,7 @@ video {
 .about-sec1H1{
     position: absolute;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 5rem;
+    font-size: calc((7 - 1)* 1.2vw + 1rem);
     font-weight: 900;
     font-style: normal;
     text-align: center;
@@ -690,9 +690,6 @@ address{
     .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
         width: 500px;
     }
-    .about-section1 .sec1H1{
-        font-size: 6rem;
-    }
     #about-imgSec1{
         object-fit:fill;
         object-position: 20% 20%;
@@ -874,7 +871,6 @@ address{
 
     .about-section1 .sec1H1{
         white-space: normal;
-        font-size: 6rem;
         line-height: 1;
     }
     .about-section2{
@@ -954,7 +950,6 @@ address{
     }
     .about-section1 .about-sec1H1{
         white-space: normal;
-        font-size: 5rem;
         line-height: 1;
     }
     .about-section2{
@@ -1034,9 +1029,6 @@ address{
     }
     .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
         width: 350px;
-    }
-    .about-section1 .about-sec1H1{
-        font-size: 4rem;
     }
     .about-section2{
         line-height: 1;
