@@ -203,7 +203,9 @@ video {
 
 .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
     height: 500px;
+    width: 500px;
     margin-bottom: 15px;
+    opacity: .8;
 }
 .home-section4-2 img,.home-section4-5 img{
     width: 525px;
@@ -387,6 +389,10 @@ div.about-section3-2{
     margin: 100px;
     display: flex;
     padding: 50px;
+}
+.services-section img {
+    width: 500px;
+    border-radius: 10px;
 }
 .services-section1:hover,.services-section2:hover,.services-section3:hover,.services-section4:hover,.services-section5:hover,.services-section6:hover{
     transition: 1s;
