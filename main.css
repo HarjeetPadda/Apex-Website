@@ -84,18 +84,11 @@ video {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: calc((5 * 1) * 1.2vw + 1rem);
     font-weight: 900;
-    top: 400px;
+    top: 450px;
     left: 200px;
+    line-height: 1;
 }
-.home-sec1H2{
-    position: absolute;
-    color: #fff;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: calc((5 * 1) * 1.2vw + 1rem);
-    font-weight: 900;
-    top: 520px;
-    left: 200px;
-}
+
 .home-section2{
     position: relative;
     height: auto;
@@ -188,6 +181,7 @@ video {
     color: #47B5FF;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .home-section4-h1{
     font-family: 'Source Sans Pro',sans-serif;
@@ -203,12 +197,12 @@ video {
 
 .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
     height: 500px;
-    width: 500px;
+    width: 390px;
     margin-bottom: 15px;
     opacity: .8;
 }
 .home-section4-2 img,.home-section4-5 img{
-    width: 525px;
+    width: 100%;
 }
 .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
     text-align: center;
