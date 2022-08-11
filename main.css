@@ -379,7 +379,7 @@ div.about-section3-2{
 }
 .services-section1,.services-section2,.services-section3,.services-section4,.services-section5,.services-section6{
     width: 90%;
-    background:#27496D;
+    background:#06283D;
     color: #fff;
     line-height: 1.8;
     margin: 100px;
@@ -394,7 +394,6 @@ div.about-section3-2{
     transition: 1s;
     transform: scale(1.01);
     box-shadow: 4px 4px 4px 4px #47B5FF;
-    background: #06283D;
     z-index: 2;
 }
 
