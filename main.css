@@ -27,7 +27,7 @@ nav ul {
 
 nav ul li{
     display: inline-block;
-    margin: 25px 10px;
+    margin: 15px 10px;
 }
 #portalLogin{
     background: #fff;
@@ -84,7 +84,7 @@ video {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: calc((5 * 1) * 1.2vw + 1rem);
     font-weight: 900;
-    top: 450px;
+    top: 30vh;
     left: 200px;
     line-height: 1;
 }
@@ -591,13 +591,53 @@ address{
 }
 /* @Media 1600px*/
 @media screen and (max-width: 1600px) {
+    label.logo{
+        padding-left: 150px;
+    }
+    nav ul {
+        margin-right: 150px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #06283D;
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        width: 75%;
+        margin-left: 12.5%;
+        display: block;
+        padding: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        border-radius: 10px;
+    }
+    #portalLogin{
+        background: #06283D;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #3A7EFC;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
     .home-sec1H1{
         left: 150px;
-        top: 52vh;
-    }
-    .home-sec1H2{
-        left: 150px;
-        top: 62vh;
     }
     .home-section2-1{
         margin-left: 150px;
@@ -655,22 +695,14 @@ address{
 }
 /* @Media 1300px*/
 @media screen and (max-width: 1300px) {
-    nav ul li a{
-        font-size: 17px;
+    label.logo{
+        padding-left: 100px;
     }
-    label.logo {
-        padding-left: 75px;  
-    }
-    nav ul{
-        margin-right: 75px;
+    nav ul {
+        margin-right: 100px;
     }
     .home-sec1H1{
         left: 100px;
-        top: 54vh;
-    }
-    .home-sec1H2{
-        left: 100px;
-        top: 64vh;
     }
     .home-section2-1{
         margin-left: 100px;
@@ -722,10 +754,7 @@ address{
 }
 /* @Media 1100px*/
 @media screen and (max-width: 1110px){
-    label.logo{
-        padding-left: 50px;
-    }
-    .checkbtn{
+    /* .checkbtn{
         display: block;
     }
     ul {
@@ -762,14 +791,9 @@ address{
     }
     #check:checked ~ ul{
         left: 0;
-    }
+    } */
     .home-sec1H1{
         left: 75px;
-        top: 56vh;
-    }
-    .home-sec1H2{
-        left: 75px;
-        top: 66vh;
     }
     .home-section2-1{
         margin-left: 75px;
@@ -839,11 +863,6 @@ address{
 @media screen and (max-width: 900px) {
     .home-sec1H1{
         left: 50px;
-        top: 58vh;
-    }
-    .home-sec1H2{
-        left: 50px;
-        top: 68vh;
     }
     .home-section2-1{
         margin: 150px 0 0 50px;
@@ -1013,9 +1032,7 @@ address{
     label.logo{
         width: 20%;
     }
-    nav ul li{
-       margin:25px 0; 
-    }
+    
     .home-section4{
         padding: 50px;
     }
