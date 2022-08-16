@@ -617,6 +617,13 @@ address{
         display: block;
         padding: 10px;
     }
+    nav ul li:hover{
+        transition: .5s;
+        transform: scale(1.1);
+        box-shadow: 4px 4px 4px 4px #47B5FF;
+        border-radius: 4px;
+        z-index: 2;
+    }
     nav ul li a{
         color: #fff;
         text-decoration: none;
