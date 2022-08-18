@@ -537,6 +537,48 @@ form button:hover{
     margin: 0;
     width: 100vw;
 }
+
+/* Career style */
+.careerH2{
+    display: flex;
+    background-color:#06283D;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.careerH2 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: calc(2.5 * 1.2vh + 1rem);
+    color: white;
+    padding: 25px;
+}
+.careerH2 h2:hover{
+    transition: .5s;
+    box-shadow:#47B5FF 4px 4px 4px 4px;
+    border-radius: 10px;
+    margin: 10px 0 15px 0;
+    text-decoration: underline;
+}
+.careerMain{
+    margin-bottom: 25px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 35px;
+}
+.jobsLink{
+    text-decoration: none;
+    color: #47B5FF;
+}
+a:hover{
+    transition: .5s;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: underline;
+}
+
 /* footer style */
 .footer{
     background: #06283D;
