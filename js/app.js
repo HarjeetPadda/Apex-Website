@@ -1,9 +1,14 @@
-let checkBoxStatus = document.querySelector('#check');
+const checkBoxStatus = document.querySelector('#check');
 
-function bodyStyle(){
-    while(checkBoxStatus.checked){
-        document.body.setAttribute.style.color = "black";
+document.getElementById("check").onclick = function bodyStyle() {
+
+    if (checkBoxStatus.checked) {
+        document.body.style.position = "fixed";
+    }else{
+        document.body.style.position ="relative";
     }
 }
 
-console.log(checkBoxStatus.checked);
+
+
+
