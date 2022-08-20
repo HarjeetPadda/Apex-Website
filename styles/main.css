@@ -572,7 +572,7 @@ form button:hover{
     text-decoration: none;
     color: #47B5FF;
 }
-a:hover{
+.jobsLink:hover{
     transition: .5s;
     font-weight: 600;
     font-size: larger;
@@ -681,7 +681,7 @@ address{
         background: none;
         color: #3A7EFC;
     }
-    
+   
     #check:checked ~ ul{
         left: 0;
     }
