@@ -1,9 +1,10 @@
 window.addEventListener('load',() => {
     
     const name = sessionStorage.getItem('NAME');
-    let nameLength = name.length;
+    let len = name.length;
+    let restOfName = name.slice(1,len);
+    
 
-
-    document.getElementById('result-name').innerHTML = name[0].toUpperCase()+name[1,nameLength].toLowerCase();
+    document.getElementById('result-name').innerHTML = name[0].toUpperCase()+restOfName.toLowerCase();
 
 })
