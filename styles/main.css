@@ -750,6 +750,7 @@ address{
         left: 100px;
     }
     .home-section2-1{
+        padding: 25px;
         margin-left: 100px;
     }
     .home-section3-1{
@@ -907,7 +908,7 @@ address{
         left: 50px;
     }
     .home-section2-1{
-        margin: 150px 0 0 50px;
+        margin: 100px 0 0 50px;
         width: 60%;
         padding: 15px;
     }
@@ -1049,6 +1050,9 @@ address{
     }
 }
 @media screen and (max-width:650px){
+    .home-section2-1{
+        margin-top: 75px;
+    }
     .home-section4{
         padding-left: 60px;
     }
