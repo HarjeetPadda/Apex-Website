@@ -99,7 +99,7 @@ video {
     position: absolute;
     background: #fff;
     width: 40%;
-    margin: 150px 0 0 200px;
+    margin: 100px 0 0 200px;
     padding: 50px;
     z-index: 1;
 }
@@ -228,8 +228,8 @@ video {
     padding: 0 25px;
 }
 .home-section4-1:hover,.home-section4-2:hover,.home-section4-3:hover,.home-section4-4:hover,.home-section4-5:hover,.home-section4-6:hover{
-    transform: scale(1.1);
-    box-shadow: 4px 4px 4px 4px #47B5FF;
+    transform: scale(1.06);
+    box-shadow: 2px 2px 2px 2px #47B5FF;
     background: #06283D;
     z-index: 2;
     border-radius:10px;
@@ -350,7 +350,7 @@ div.about-section3-2{
 /* About-Section 4 */
 .about-section4{
     background: #47B5FF;
-    height: 600px;
+    height: auto;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     color: #fff;
@@ -363,9 +363,9 @@ div.about-section3-2{
     margin-bottom: 20px;
 }
 .about-section4 p{
-    font-weight: 900;
+    /* font-weight: 400; */
     font-size: calc((1.9 - 1) * 1.1vw + .8rem);
-    line-height: 1.2;
+    /* line-height: 1.2; */
     margin-bottom: 20px;
 }
 /* Services.html styles */
@@ -710,9 +710,6 @@ address{
         margin-left: 100px;
         margin-right: 100px;
     }
-    div.about-section2 p{
-        font-size: 3.5rem;
-    }
     .about-section2{
         padding: 50px 150px;
     }
@@ -720,7 +717,6 @@ address{
         height: auto;
     }
     .about-section4{
-        height: auto;
         padding: 50px 150px;
     }
     .footer{
@@ -775,9 +771,6 @@ address{
     #about-imgSec1{
         object-fit:fill;
         object-position: 20% 20%;
-    }
-    div.about-section2 p{
-        font-size: 3rem;
     }
     .about-section4{
         padding: 50px 125px;
