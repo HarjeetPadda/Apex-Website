@@ -595,12 +595,13 @@ address{
     margin-right: 25px;
     white-space: nowrap;
 }
-.footer div{
+.footer {
+    height: 280px;
     text-align: right;
     line-height: .5;
     font-size: calc(1.1 * .9rem);
     white-space: nowrap;
-    margin-left: 25px;
+    margin: 0;
 }
 
 /* @media 1900px */
