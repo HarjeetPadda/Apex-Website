@@ -6,8 +6,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 /* Nav Style Start*/
@@ -36,7 +34,7 @@ nav ul button{
     border-radius: 5px;
     padding: 5px 7px;
 }
-nav ul li a{
+nav ul a{
     color: black;
     text-decoration: none;
     font-size: 20px;
@@ -654,13 +652,14 @@ address{
         transition: .5s;
         z-index: 1;
     }
-    nav ul li{
+    nav ul a{
+        color: #fff;
         width: 75%;
         margin-left: 12.5%;
         display: block;
         padding: 10px;
     }
-    nav ul li:hover{
+    nav ul a:hover{
         transition: .5s;
         transform: scale(1.1);
         box-shadow: 4px 4px 4px 4px #47B5FF;
@@ -798,44 +797,6 @@ address{
 }
 /* @Media 1100px*/
 @media screen and (max-width: 1110px){
-    /* .checkbtn{
-        display: block;
-    }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #06283D;
-        top: 110px;
-        left: -100%;
-        text-align: center;
-        transition: .5s;
-        z-index: 1;
-    }
-    nav ul li{
-        display: block;
-        margin: 60px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 400;
-        padding: 7px 13px;
-        border-radius: 10px;
-    }
-    #portalLogin{
-        background: #06283D;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #3A7EFC;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    } */
     .home-sec1H1{
         left: 75px;
     }
@@ -1075,21 +1036,34 @@ address{
         width: 400px;
     }
 }
-@media screen and (max-width:500px){
-    label.logo{
-        width: 20%;
+@media screen and (max-width:500px){   
+    img.logo.navbrand{
+        width: 220px;
+    } 
+    .checkbtn{
+        margin: 10px;
     }
-    
+    .home-section2{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-section2-1{
+        position: relative;
+        width: 85%;
+        margin: 7%;
+        z-index: 0;
+    }
+    .home-section2-2 img{
+        margin: 25px;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
     .home-section4{
         padding: 50px;
     }
-    .home-section4-1 img,.home-section4-2 img,.home-section4-3 img,.home-section4-4 img,.home-section4-5 img,.home-section4-6 img{
-        width: 340px;
-    }
-    .home-section4-1,.home-section4-2,.home-section4-3,.home-section4-4,.home-section4-5,.home-section4-6 {
-        width: 380px;
-    }
-
+    
     .home-section4{
         padding-left: 20px;
         justify-content: center;
@@ -1108,10 +1082,21 @@ address{
     .services-section1-1 img,.services-section2-1 img,.services-section3-1 img,.services-section4-1 img,.services-section5-1 img,.services-section6-1 img{
         width: 250px;
     }
-    address{
-        padding: 25px 100px 25px 15px;
+    .tdCareer{
+        display: none;
     }
-    .footer > div{
-        padding: 40px 15px 25px 100px; 
+    .footer address{
+        padding: 10px;
+    }
+    .footer div{
+        padding: 10px;
+        margin: 25px 0 0 0;
     }
 }
+@media screen and ( max-width: 300px ){
+    .home-section6 img {
+        width: 250px;
+    }
+}
+    
+
